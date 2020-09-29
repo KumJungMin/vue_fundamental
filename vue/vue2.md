@@ -121,7 +121,7 @@ vm.$watch('a', function (newVal, oldVal) {
 
 ## 3) 인스턴스 라이프사이클 훅
 - 사용자 정의 로직을 실행할 수있는 라이프사이클 훅 도 호출된다. 
-<img src="https://kr.vuejs.org/images/lifecycle.png"/>
+<img width="70%" src="https://kr.vuejs.org/images/lifecycle.png"/>
 
 - 아래 예제는 created 훅은 인스턴스가 생성된 후에 호출된다.
 
