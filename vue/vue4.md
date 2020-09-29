@@ -11,6 +11,9 @@
 <!-- v-if디렉티브는 seen에 따라 <p>를 제거 혹은 삽입함-->
 ```
 
+<br/>
+
+
 ### (1) 전달인자
 
 : 디렉티브는 `콜론(:)`을 사용해 전달인자를 사용할 수 있다. 
@@ -30,6 +33,9 @@
 <a v-on:click="doSomething"></a>
 <!--전달인자는 이벤트를 받는 이름-->
 ```
+
+<br/>
+
 
 ### (2) 동적 전달인자, 대괄호
 
@@ -56,6 +62,9 @@
 <a v-bind:['foo' + bar]="value"> ... </a>
 ```
 
+<br/>
+
+
 ### (3) 수식어, 특수접미사
 
 : 수식어는 점으로 표시되는 특수 접미사이다.
@@ -67,6 +76,9 @@
 ```html
 <form v-on:submit.prevent="onSubmit"></form>
 ```
+
+<br/>
+
 
 ### (4)  약어
 
@@ -97,6 +109,9 @@
 <!-- shorthand with dynamic argument (2.6.0+) -->
 <a @[event]="doSomething"> ... </a>
 ```
+
+<br/>
+
 
 ---
 
@@ -151,6 +166,8 @@ var vm = new Vue({
 역순메시지 : "olleh"
 ```
 
+<br/>
+
 ### (2) computed속성의 캐싱 vs 메소드
 
 : 표현식에서 computed 메소드를 호출해도 같은 결과를 얻을 수 있다.
@@ -159,11 +176,14 @@ var vm = new Vue({
 <p>역순메시지 : "{{ reverseMessage() }}"</p>
 ```
 
+<br/>
+
+
 - computed 속성의 캐싱 접근방법은...
 
-**computed 속성은 종속 대상을 따라 저장(캐싱)된다!** 
+*computed 속성은 종속 대상을 따라 저장(캐싱)된다!* 
 
-: 해당 속성이 종속된 대상이 변경될 때만 함수를 실행한다. ( message가 변경되지 않는 한 계산을 다시 하지 않음)
+: 해당 속성이 종속된 대상이 변경될 때만 함수를 실행한다. (message가 변경되지 않는 한 계산을 다시 하지 않음)
 
 ```jsx
 computed: {
@@ -175,11 +195,18 @@ computed: {
 
 :  `Date.now()`처럼 아무 곳에도 의존하지 않는 computed 속성의 경우 절대로 업데이트되지 않는다.
 
+<br/>
+
+
 - 메소드 접근방법은...
 
 메소드로 호출시 렌더링할 때마다 **항상** 함수를 실행한다!
 
-***캐싱이 왜 필요할까요?*** 
+
+<br/>
+
+
+*캐싱이 왜 필요할까요?*
 
 ```
 계산에 시간이 많이 걸리는 computed 속성인 **A**를 가지고 있다고 해봅시다. 
@@ -191,18 +218,25 @@ computed: {
 캐싱을 원하지 않는 경우 메소드를 사용하십시오.
 ```
 
+<br/>
+
+
 ### (3) computed 속성 vs watch 속성
 
-***watch속성 사용하지 마세요!***
+*watch속성 사용하지 마세요!*
 
 - vue 인스턴스의 데이터 변경을 관찰하고 이에 반응하는 보다 일반적인 watch 속성을 제공한다.
 - 다른 데이터 기반으로 변경할 필요가 있는 데이터가 있는 경우, watch 속성를 사용하기도 한다.
 - 하지만 명령적인 watch 콜백보다 computed 속성을 사용하는 것이 더 좋다.
 
+
+<br/>
+
+
 ### (4) computed 속성의 setter 함수
 
 - 필요한 경우 setter 함수를 만들어 쓸 수 있다.
-- `vm.fullName = 'John Doe'`를 실행하면 설정자가 호출되고 `vm.firstName`과 `vm.lastNam`e이 그에 따라 업데이트 된다.
+- `vm.fullName = 'John Doe'`를 실행하면 설정자가 호출되고 `vm.firstName`과 `vm.lastNam`이 그에 따라 업데이트 된다.
 
 ```jsx
 //...
@@ -222,6 +256,9 @@ computed : {
 }
 ```
 
+<br/>
+
+
 ## 2) watch 속성
 
 - 대부분 computed속성이 적합하지만, watch속성을 사용해야할 경우가 있다.
@@ -232,11 +269,19 @@ computed : {
 
     : 데이터 변경에 대한 응답이 시간이 많이 소요되는 조작인 경우
 
+<br/>
+
+
 - 동기 비동기?
 
-    **동기방식**은 설계가 매우 간단하고 직관적이지만 결과가 주어질 때까지 아무것도 못하고 대기해야 하는 단점이 있고,
+    **동기방식**은 설계가 매우 간단하고 직관적이지만 결과가 주어질 때까지 아무것도 못하고 대기.
 
-    **비동기방식**은 동기보다 복잡하지만 결과가 주어지는데 시간이 걸리더라도 그 시간 동안 다른 작업을 할 수 있으므로 자원을 효율적으로 사용할 수 있는 장점이 있습니다.
+    **비동기방식**은 동기보다 복잡하지만 결과가 주어지는데 시간이 걸리더라도 그 시간 동안 다른 작업을 할 수 있음.
+
+
+<br/>
+
+
 
 - html
 
@@ -255,6 +300,9 @@ computed : {
 <script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
 <script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>
 ```
+
+<br/>
+
 
 - js
 
@@ -318,6 +366,9 @@ var watchExample = new Vue({
 <div v-bind:class="{active: isActive}"></div>
 ```
 
+<br/>
+
+
 - 여러 클래스 바인딩하기(1)
 
 : 여러 클래스를 동적으로 적용할 수 있다.
@@ -346,6 +397,9 @@ data: {
 <div class="static active"></div>
 ```
 
+<br/>
+
+
 - 여러 클래스 바인딩하기(2)
 
 : div에는 하나의 클래스를 바인딩하고
@@ -364,6 +418,9 @@ data: {
   }
 }
 ```
+
+<br/>
+
 
 - 여러 클래스 바인딩하기(3)
 
@@ -391,6 +448,9 @@ computed: {
   }
 }
 ```
+
+<br/>
+
 
 ### (2) 배열구문을 사용한 바인딩
 
@@ -433,6 +493,9 @@ data: {
 <div v-bind:class="[{ active: isActive }, errorClass]"></div>
 ```
 
+<br/>
+
+
 ### (3) 컴포넌트와 바인딩
 
 - 예제1
@@ -470,6 +533,9 @@ Vue.component('my-component', {
 ```html
 <p class="foo bar active">Hi</p>
 ```
+
+<br/>
+
 
 ## 2) 인라인 스타일 바인딩
 
@@ -510,6 +576,9 @@ data : {
 }
 ```
 
+<br/>
+
+
 ### (2) 배열구문
 
 : 아래와 같이 배열을 이용해 스타일 객체를 사용할 수 있다.
@@ -518,9 +587,15 @@ data : {
 <div v-bind:style="[baseStyles, overridingStyles]"></div>
 ```
 
+<br/>
+
+
 ### (3) 자동접두사
 
 : `v-bind:style`에 브라우저 벤더 접두어(`webkit-`)가 필요한 경우 Vue에서 자동으로 해당 접두어를 감지해 스타일에 적용한다.
+
+<br/>
+
 
 ### (4) 다중 값 제공, 2.3버전이후
 
@@ -533,6 +608,9 @@ data : {
 ```html
 <div v-bind:syle="{display: ['-webkit-box', '-ms-flexbox', 'flex']}">
 ```
+
+<br/>
+
 
 ---
 
@@ -564,6 +642,9 @@ data : {
 </template>
 ```
 
+<br/>
+
+
 ### (2) v-else
 
 : `v-else` 엘리먼트는 `v-if` 또는 `v-else-if` 바로 뒤에 있어야 한다.
@@ -576,6 +657,9 @@ data : {
   이제는 안보입니다
 </div>
 ```
+
+<br/>
+
 
 ### (3) v-else-if
 
@@ -597,6 +681,9 @@ data : {
   Not A/B/C
 </div>
 ```
+
+<br/>
+
 
 ### (4) key를 이용한 재사용가능한 엘리먼트 제어
 
@@ -623,6 +710,9 @@ data : {
 </template>
 ```
 
+<br/>
+
+
 - 예제2
 
 : 해결책으로, `key`를 추가하여 `"두 엘리먼트는 완전히 별개니까 재사용하지마!"`라고 알려준다.
@@ -640,6 +730,9 @@ data : {
 </template>
 ```
 
+<br/>
+
+
 ## 2) v-show
 
 - 엘리먼트를 조건부로 표시하는 또다른 옵션이다.
@@ -650,6 +743,9 @@ data : {
 ```html
 <h1 v-show="ok">안녕하세요!</h1>
 ```
+
+<br/>
+
 
 ---
 
@@ -724,6 +820,9 @@ var example2 = new Vue({
 * Parent-1-Bar
 ```
 
+<br/>
+
+
 ## 2) v-for과 객체
 
 - `v-for`을 사용해 객체를 반복할 수 있다.
@@ -791,6 +890,9 @@ publishedAt : 2020-10
 </div>
 ```
 
+<br/>
+
+
 ## 3) 배열 변경 감지
 
 ### (1) 변이 메소드
@@ -814,6 +916,9 @@ reverse()
 example1.items.push({ message: 'Baz' })
 ```
 
+<br/>
+
+
 ### (2) 배열 대체
 
 : 원본 배열을 변형하지 않고 항상 새 배열을 반환한다.
@@ -831,6 +936,9 @@ example1.items = example1.items.filter(function (item) {
   return item.message.match(/Foo/)
 })
 ```
+
+<br/>
+
 
 ### (3) 주의사항!
 
@@ -850,6 +958,9 @@ vm.items[1] = 'x'   // reactive하지 않음
 vm.items.length = 2 // reactive하지 않음
 ```
 
+<br/>
+
+
 - [1번] 극복하는 법
 
 : `splice`를 사용해 해당 인덱스의 값을 새로운 값으로 변경한다.
@@ -862,6 +973,9 @@ Vue.set(vm.items, indexOfItem, newValue)
 vm.items.splice(indexOfItem, 1, newValue)
 ```
 
+<br/>
+
+
 - [2번]  극복하는 법
 
 : `splice`를 사용해 원하는 길이만큼만 살려둔다!
@@ -869,6 +983,9 @@ vm.items.splice(indexOfItem, 1, newValue)
 ```jsx
 vm.items.splice(newLength)
 ```
+
+<br/>
+
 
 ## 4) 객체 변경 감지에 관한 주의사항
 
@@ -906,6 +1023,9 @@ vm.userProfile = Object.assign({}, vm.userProfile, {
   favoriteColor: 'Vue Green'
 })
 ```
+
+<br/>
+
 
 ## 5) 필터링/정렬된 결과 표시하기
 
@@ -953,6 +1073,9 @@ methods: {  //even이라는 메소드 생성
 }
 ```
 
+<br/>
+
+
 ## 6) Range v-for
 
 - v-for은 숫자를 사용할 수 있다.
@@ -969,6 +1092,9 @@ methods: {  //even이라는 메소드 생성
 1 2 3 4 5 6 7 8 9 10
 ```
 
+<br/>
+
+
 ## 7) v-for 템플릿
 
 - `v-if`와 마찬가지로, `<template>`태그를 사용해 여러 엘리먼트 블록을 렌더링 할 수 있다.
@@ -981,6 +1107,9 @@ methods: {  //even이라는 메소드 생성
   </template>
 </ul>
 ```
+
+<br/>
+
 
 ## 8) v-for와 v-if, 반복이 우선!
 
@@ -1005,6 +1134,9 @@ methods: {  //even이라는 메소드 생성
 </ul>
 <p v-else>No todos left!</p>
 ```
+
+<br/>
+
 
 ## 9) v-for과 컴포넌트
 
