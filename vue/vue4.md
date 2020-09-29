@@ -627,7 +627,9 @@ data : {
 <h1 v-else>on nooooo</h1>
 ```
 
-### (1) <template>와 v-if
+<br/>
+
+### (1) template 와 v-if
 
 : `v-if`는 하나의 엘리먼트에 추가해야 한다.
 
