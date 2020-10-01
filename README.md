@@ -11,7 +11,9 @@
 
 <br/>
 
-### 2) 강의
+### 2) 실전요약
+
+- (1) <a href="https://github.com/KumJungMin/vue_fundamental/blob/master/vue/Export-e73342a7-3981-4fb5-b61b-6a34c6f36bbd/Untitled%20de218045fe2141749e667f0f0348e324.md">vue.js 개발을 위해서 알아야할 기본 개념 요약!</a>
 
 <br/>
 
