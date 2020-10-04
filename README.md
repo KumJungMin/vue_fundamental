@@ -26,6 +26,11 @@
 - (2) <a href="https://github.com/KumJungMin/vue_fundamental/blob/master/vue/1/vue%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%20%E1%84%8B%E1%85%AD%E1%84%8C%E1%85%A5%E1%86%B7%20ba0d1f3465644b0d897551ac047e54c5.md">vue.js 개발을 위해서 알아야할 기본 개념 요약(2)</a>
 
 - (3) <a href="https://github.com/KumJungMin/vue_fundamental/blob/master/vue/2/Untitled%200e2dcafd8b264d9699ebc74e3cd5db57.md">로그인&로그아웃</a>
+
+- (4) <a href="https://github.com/KumJungMin/vue_fundamental/blob/master/vue/7/Untitled%209051bf062bf04055821326ab3558797e.md">보드생성&조회</a>
+
+- (5) <a href="">보드수정&삭제</a>
+
 <br/>
 
 ## 2. django와 vue 연동
