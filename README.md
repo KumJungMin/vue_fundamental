@@ -21,6 +21,11 @@
 
 *2020.10.04 updated*
 
+*이 내용들은 인프런의 '트렐로 개발로 배우는 Vuejs, Vuex, Vue-Router 프론트엔드 실전 기술' 공부요약 자료입니다.*
+
+<a href="https://github.com/KumJungMin/lecture-vue-trello">코드보기</a>
+
+
 - (1) <a href="https://github.com/KumJungMin/vue_fundamental/blob/master/vue/Export-e73342a7-3981-4fb5-b61b-6a34c6f36bbd/Untitled%20de218045fe2141749e667f0f0348e324.md">vue.js 개발을 위해서 알아야할 기본 개념 요약(1)</a>
 
 - (2) <a href="https://github.com/KumJungMin/vue_fundamental/blob/master/vue/1/vue%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF%20%E1%84%8B%E1%85%AD%E1%84%8C%E1%85%A5%E1%86%B7%20ba0d1f3465644b0d897551ac047e54c5.md">vue.js 개발을 위해서 알아야할 기본 개념 요약(2)</a>
