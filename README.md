@@ -29,7 +29,7 @@
 
 - (4) <a href="https://github.com/KumJungMin/vue_fundamental/blob/master/vue/7/Untitled%209051bf062bf04055821326ab3558797e.md">보드생성&조회</a>
 
-- (5) <a href="">보드수정&삭제</a>
+- (5) <a href="https://github.com/KumJungMin/vue_fundamental/blob/master/vue/Export-7dd99546-ea78-4890-8f40-0b260b24ad37/Untitled%2046dcc2eed0ba460c885c0348804588e3.md">보드수정&삭제</a>
 
 <br/>
 
