@@ -1,8 +1,10 @@
 # vue_fundamental
-*2020.09.30 updated*
 
 ## 1. vue기초
 ### 1) 공식문서
+
+*2020.09.30 updated*
+
 - (1) <a href="https://github.com/KumJungMin/vue_fundamental/blob/master/vue/first_vue.md"> vue사용법에 대해 간략히 구경하기 </a>
 
 - (2) <a href="https://github.com/KumJungMin/vue_fundamental/blob/master/vue/vue2.md"> vue인스턴스와 라이프사이클</a>
@@ -16,6 +18,8 @@
 <br/>
 
 ### 2) 실전요약
+
+*2020.10.04 updated*
 
 - (1) <a href="https://github.com/KumJungMin/vue_fundamental/blob/master/vue/Export-e73342a7-3981-4fb5-b61b-6a34c6f36bbd/Untitled%20de218045fe2141749e667f0f0348e324.md">vue.js 개발을 위해서 알아야할 기본 개념 요약(1)</a>
 
