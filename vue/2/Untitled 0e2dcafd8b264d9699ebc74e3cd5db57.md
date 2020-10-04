@@ -6,6 +6,8 @@
 
 ![Untitled%200e2dcafd8b264d9699ebc74e3cd5db57/1.jpeg](Untitled%200e2dcafd8b264d9699ebc74e3cd5db57/1.jpeg)
 
+<br/>
+
 ## 2) 코드
 
 ### (1) App.vue [root component]
@@ -29,6 +31,8 @@ export default {
   }
 }
 ```
+
+<br/>
 
 ### (2) NavBar.js [link component]
 
@@ -82,6 +86,8 @@ export default {
   }
 }
 ```
+
+<br/>
 
 ### (3) Login.vue
 
@@ -146,6 +152,8 @@ export default {
 }
 ```
 
+<br/>
+
 ### (4) store/action.js
 
 ```jsx
@@ -158,6 +166,8 @@ const actions = {
   }
 }
 ```
+
+<br/>
 
 ### (5) api/index.js
 
@@ -202,6 +212,8 @@ export const auth = {   //로그인 처리
   }
 }
 ```
+
+<br/>
 
 ### (6) store/mutations.js
 
