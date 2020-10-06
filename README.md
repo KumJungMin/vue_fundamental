@@ -36,6 +36,10 @@
 
 - (5) <a href="https://github.com/KumJungMin/vue_fundamental/blob/master/vue/Export-7dd99546-ea78-4890-8f40-0b260b24ad37/Untitled%2046dcc2eed0ba460c885c0348804588e3.md">보드수정&삭제</a>
 
+- (6) <a href="">카드생성&조회_카드리스트생성&조회</a>
+
+- (7) <a href="">카드수정&삭제_카드리스트수정&</a>
+
 <br/>
 
 ## 2. django와 vue 연동
